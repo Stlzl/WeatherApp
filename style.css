@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: 'Golos Text', sans-serif;
+    margin: 0px;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    background: url('https://img.freepik.com/free-vector/sky-background-pastel-paper-cut-design-vector_53876-144660.jpg?w=740&t=st=1677321275~exp=1677321875~hmac=7384f31081e6f62ec89961d6687155b052ab0a1a36af59faa13aa1ece1b8c6ee');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 300px;
+    height: 48px;
+    margin-top: 10%;
+    border-radius: 24px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar {
+    display: flex;
+    height: 48px;
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    border-radius: 24px;
+    z-index: 2;
+}
+
+.icon-search {
+    padding: 8px;
+    font-size: 32px;
+    transition: color 0.5s ease;
+    color: grey;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: white;
+}
+
+.icon-button {
+    font-size: 32px;
+    padding: 8px 9px 8px 9px;
+    transition: color 0.2s ease;
+    color: grey;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: white;
+}
+
+.text-input {
+    height: 48px;
+    width: 206px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    padding: 8px;
+    font-size: 20px;
+    /* transition: all 0.2s ease; */
+    background: none;
+    background-color: white;
+}
+
+.focus {
+    transition: color 0.5s ease;
+    color: black;
+}
+
+.focus-input {
+
+    border-left: 0px;
+    border-right: 0px;
+    outline: none;
+    transition: all 0.2s ease;
+    color: black;
+}
+
+.weatherBox {
+    width: 300px;
+    transform: translateY(-150px) scaleY(0); 
+    height: 300px;
+    background-color: white;
+    border-top: 0px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    z-index: -1;
+    
+    transition: all 0.8s cubic-bezier(0.36, 1.77, 0, 0.57)
+}
+
+.resultBorderLeft {
+    border-bottom-left-radius: 0px;
+}
+
+.resultBorderRight {
+    border-bottom-right-radius: 0px;
+}
+
+.city {
+    text-align: center;
+    padding-top: 8px;
+    font-size: 24px;
+    padding-bottom: 12px;
+}
+
+.image {
+    display: block;
+    margin: auto;
+}
+
+.weatherName {
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 32px;
+}
+
+i {
+    display: block;
+}
+
+.temp, .wind {
+    width: fit-content;
+}
+
+.displayWeather {
+    transform: translateY(0px) scaleY(1);
+}
+
+.infoCheck {
+    opacity: 0;
+    visibility: hidden;
+    transition: 3s opacity, 3s visibility;
+}
+
+.infoNewCheck {
+    visibility: visible;
+    opacity: 1;
+}
+
+.flexText {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.textSize {
+    font-size: 24px;
+}
